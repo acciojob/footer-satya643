@@ -1,35 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Footer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
-        </div>
-        <div class="link-boxes">
-          <!-- your code here -->
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .footer {
+      background-color: #000;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer .logo {
+      font-size: 28px;
+      font-weight: bold;
+      flex: 1 1 200px;
+    }
+
+    .footer-section {
+      flex: 1 1 160px;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-section ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-section ul li a:hover {
+      color: #fff;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons i {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 18px;
+    }
+
+    .footer-bottom {
+      background-color: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <footer>
+    <div class="footer">
+      <div class="logo">company</div>
+
+      <div class="footer-section">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Get Started</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">App Design</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Logo Design</a></li>
+          <li><a href="#">Banner Design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Other services</h4>
+        <ul>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Content Marketing</a></li>
+          <li><a href="#">Prints</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul>
+          <li>+91 8879887262</li>
+          <li>+91 8879887262</li>
+          <li>contact@company.com</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <div class="social-icons media-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-youtube"></i>
         </div>
       </div>
-      <div class="bottom-details">
-        <!-- your code here -->
-      </div>
-    </footer>
-  </body>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2021 company.</p>
+      <p>Privacy policy</p>
+    </div>
+  </footer>
+
+</body>
 </html>
