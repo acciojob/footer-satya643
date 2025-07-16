@@ -33,6 +33,13 @@
       flex: 1 1 200px;
     }
 
+    .link-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      flex: 4;
+    }
+
     .footer-section {
       flex: 1 1 160px;
     }
@@ -120,6 +127,10 @@
         align-items: center;
       }
 
+      .link-boxes {
+        justify-content: center;
+      }
+
       .footer-bottom {
         flex-direction: column;
         align-items: center;
@@ -134,45 +145,49 @@
     <div class="footer">
       <div class="logo">company</div>
 
-      <div class="footer-section">
-        <h4>Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Get Started</a></li>
-        </ul>
+      <!-- ✅ Wrapper for link sections -->
+      <div class="link-boxes">
+        <div class="footer-section">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Get Started</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">App Design</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Logo Design</a></li>
+            <li><a href="#">Banner Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Other services</h4>
+          <ul>
+            <li><a href="#">SEO</a></li>
+            <li><a href="#">Content Marketing</a></li>
+            <li><a href="#">Prints</a></li>
+            <li><a href="#">Social Media</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li>+91 8879887262</li>
+            <li>+91 8879887262</li>
+            <li>contact@company.com</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-section">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#">App Design</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Logo Design</a></li>
-          <li><a href="#">Banner Design</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h4>Other services</h4>
-        <ul>
-          <li><a href="#">SEO</a></li>
-          <li><a href="#">Content Marketing</a></li>
-          <li><a href="#">Prints</a></li>
-          <li><a href="#">Social Media</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h4>Contact</h4>
-        <ul>
-          <li>+91 8879887262</li>
-          <li>+91 8879887262</li>
-          <li>contact@company.com</li>
-        </ul>
-      </div>
-
+      <!-- Social Media -->
       <div class="footer-section">
         <div class="social-icons media-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
